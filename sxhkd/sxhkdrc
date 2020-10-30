@@ -1,0 +1,30 @@
+mod4 + Return
+  kitty
+
+# make sxhkd reload its configuration files:
+mod4 + s
+    pkill -USR1 -x sxhkd
+
+# for dmenu
+mod4 + d
+  rofi -no-lazy-grab -show drun -theme ~/.config/rofi/launchers/style_normal_grid.rasi
+
+# quit/restart bspwm
+shift + alt + {q,r}
+  bspc {quit,wm -r}
+
+# Switch to Window
+mod4 + {1-9} 
+  bspc desktop -f '^{1-9}'
+
+# Move App To Specified Window
+mod4 + shift + {1-9}
+  bspc node -d '^{1-9}' --follow
+
+# Window Switcher : hmmmmmm
+mod4 + Tab
+  rofi -show window -theme ~/.config/rofi/launchers/style_normal_grid.rasi 
+
+# Power Menu
+mod4 + Escape
+  rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu -theme ~/.config/rofi/launchers/style_normal_grid.rasi  

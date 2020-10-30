@@ -1,0 +1,24 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+sxhkd &
+
+rm -rf .cache/wal
+wal -i wallpaper/wallpaper.jpg
+rm -rf ~/.Xresources
+sudo cp ~/.cache/wal/colors.Xresources ~/.Xresources 
+picom --config ~/.config/picom/picom.conf &
+setxkbmap gb
+polybar -r bar -c ~/.config/polybar/date/config & 
+polybar -r bar -c ~/.config/polybar/launcher/config &
+
+nitrogen --set-scaled ~/wallpaper/wallpaper.jpg
