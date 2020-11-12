@@ -1,0 +1,15 @@
+* {
+  black:      #000000;
+  red:        #eb6e67;
+  green:      #95ee8f;
+  yellow:     #f8c456;
+  blue:       #6eaafb;
+  mangenta:   #d886f3;
+  cyan:       #6cdcf7;
+  emphasis:   #50536b;
+  accent:       #dfdfdf;
+  text-alt:   #b2b2b2;
+  foreground: #abb2bf;
+  background: #282c34;
+  background-focus: #50536b;
+}

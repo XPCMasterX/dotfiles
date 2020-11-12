@@ -1,0 +1,27 @@
+[bar/date]
+width = 10.4%
+height = 24
+; override-redirect=true
+
+offset-x = 1714
+offset-y = 6
+
+font-0 = "Iosevka:size=12;3"
+background = ${xrdb:color1:#222} 
+foreground = ${xrdb:color7:#222}
+
+; modules-center = user
+modules-center = date
+
+[module/date]
+type = internal/date
+
+interval = 1.0
+
+time = %I:%M %p
+date = %d-%m-%Y%
+
+format-padding = 2
+ 
+label = %time% | %date%
+

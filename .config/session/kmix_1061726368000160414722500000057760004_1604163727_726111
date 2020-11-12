@@ -1,0 +1,10 @@
+[Number]
+NumberOfWindows=1
+
+[WindowProperties1]
+ClassName=KMixWindow
+ObjectName=KMixWindow
+State=AAAA/wAAAAD9AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+VGA-1 XPosition=0
+VGA-1 YPosition=0

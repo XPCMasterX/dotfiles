@@ -1,0 +1,28 @@
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+
+[General]
+Version=200
+ViewPropsTimestamp=2020,10,31,12,27,13
+
+[IconsMode]
+FontWeight=50
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAAD/fwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAlAAAD/QAAAEYA////AAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAAAgD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAIA////AAAC7wAAA/0AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+VGA-1 Height 1080=1058
+VGA-1 Width 1920=941
+VGA-1 XPosition=968
+VGA-1 YPosition=11
+
+[PreviewSettings]
+Plugins=marble_thumbnail_shp,appimagethumbnail,imagethumbnail,audiothumbnail,designerthumbnail,comicbookthumbnail,opendocumentthumbnail,marble_thumbnail_geojson,rawthumbnail,pothumbnail,marble_thumbnail_kmz,svgthumbnail,blenderthumbnail,ebookthumbnail,exrthumbnail,jpegthumbnail,cursorthumbnail,mobithumbnail,directorythumbnail,mltpreview,marble_thumbnail_gpx,djvuthumbnail,windowsimagethumbnail,palathumbcreator,kraorathumbnail,marble_thumbnail_osm,marble_thumbnail_kml,fontthumbnail,gsthumbnail,windowsexethumbnail,ffmpegthumbs
+
+[SettingsDialog]
+VGA-1 Height 1080=419
+VGA-1 Width 1920=566

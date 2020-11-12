@@ -1,0 +1,46 @@
+<template>
+  <link rel="stylesheet" href="styles.css" type="style/css" />
+  <h1>${winner ? 'Winner: ' + winner : 'In Progress'}</h1>
+
+  <button click.trigger="fillIn(0)" css.bind="style">
+    ${squares[0].value}
+  </button>
+
+  <button click.trigger="fillIn(1)" css.bind="style">
+    ${squares[1].value}
+  </button>
+
+  <button click.trigger="fillIn(2)" css.bind="style">
+    ${squares[2].value}
+  </button>
+  <br />
+
+  <button click.trigger="fillIn(3)" css.bind="style">
+    ${squares[3].value}
+  </button>
+
+  <button click.trigger="fillIn(4)" css.bind="style">
+    ${squares[4].value}
+  </button>
+
+  <button click.trigger="fillIn(5)" css.bind="style">
+    ${squares[5].value}
+  </button>
+  <br />
+
+  <button click.trigger="fillIn(6)" css.bind="style">
+    ${squares[6].value}
+  </button>
+
+  <button click.trigger="fillIn(7)" css.bind="style">
+    ${squares[7].value}
+  </button>
+
+  <button click.trigger="fillIn(8)" css.bind="style">
+    ${squares[8].value}
+  </button>
+  <br />
+
+  <button click.trigger="clearBoard()" css.bind="clearStyle">Clear</button>
+  <button click.trigger="undo()" css.bind="undoStyle">Undo</button>
+</template>

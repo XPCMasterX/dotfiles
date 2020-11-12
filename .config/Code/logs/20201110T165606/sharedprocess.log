@@ -1,0 +1,16 @@
+[2020-11-10 16:56:09.696] [sharedprocess] [info] main {"machineId":"626292838591a2cd4204512a1a3984544161bd0cbea9a79198919346098034d6","windowId":2}
+[2020-11-10 16:56:44.837] [sharedprocess] [info] Installing extension: bauke.horizon-vscode
+[2020-11-10 16:56:45.158] [sharedprocess] [info] Downloaded extension: bauke.horizon-vscode undefined
+[2020-11-10 16:56:45.238] [sharedprocess] [info] Extracted extension to /home/varshith/.vscode/extensions/.bauke.horizon-vscode-3.0.3: bauke.horizon-vscode
+[2020-11-10 16:56:45.238] [sharedprocess] [info] Renamed to /home/varshith/.vscode/extensions/bauke.horizon-vscode-3.0.3
+[2020-11-10 16:56:45.240] [sharedprocess] [info] Installation completed. bauke.horizon-vscode
+[2020-11-10 16:56:45.248] [sharedprocess] [info] Extensions installed successfully: bauke.horizon-vscode
+[2020-11-10 16:56:49.705] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-11-10 16:57:43.250] [sharedprocess] [info] Uninstalling extension: bauke.horizon-vscode
+[2020-11-10 16:57:43.258] [sharedprocess] [info] Successfully uninstalled extension: bauke.horizon-vscode
+[2020-11-10 16:59:02.167] [sharedprocess] [info] Installing extension: sintrumit.theme-oceanic-next-italic
+[2020-11-10 16:59:02.985] [sharedprocess] [info] Downloaded extension: sintrumit.theme-oceanic-next-italic undefined
+[2020-11-10 16:59:03.010] [sharedprocess] [info] Extracted extension to /home/varshith/.vscode/extensions/.sintrumit.theme-oceanic-next-italic-1.1.14: sintrumit.theme-oceanic-next-italic
+[2020-11-10 16:59:03.010] [sharedprocess] [info] Renamed to /home/varshith/.vscode/extensions/sintrumit.theme-oceanic-next-italic-1.1.14
+[2020-11-10 16:59:03.011] [sharedprocess] [info] Installation completed. sintrumit.theme-oceanic-next-italic
+[2020-11-10 16:59:03.014] [sharedprocess] [info] Extensions installed successfully: sintrumit.theme-oceanic-next-italic

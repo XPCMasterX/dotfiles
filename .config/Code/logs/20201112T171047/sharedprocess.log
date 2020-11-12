@@ -1,0 +1,7 @@
+[2020-11-12 17:10:50.582] [sharedprocess] [info] main {"machineId":"626292838591a2cd4204512a1a3984544161bd0cbea9a79198919346098034d6","windowId":2}
+[2020-11-12 17:10:52.271] [sharedprocess] [info] Installing extension: esbenp.prettier-vscode
+[2020-11-12 17:10:53.566] [sharedprocess] [info] Downloaded extension: esbenp.prettier-vscode undefined
+[2020-11-12 17:10:53.720] [sharedprocess] [info] Extracted extension to /home/varshith/.vscode/extensions/.esbenp.prettier-vscode-5.7.2: esbenp.prettier-vscode
+[2020-11-12 17:10:53.721] [sharedprocess] [info] Renamed to /home/varshith/.vscode/extensions/esbenp.prettier-vscode-5.7.2
+[2020-11-12 17:10:53.721] [sharedprocess] [info] Installation completed. esbenp.prettier-vscode
+[2020-11-12 17:10:53.729] [sharedprocess] [info] Extensions installed successfully: esbenp.prettier-vscode

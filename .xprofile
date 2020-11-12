@@ -2,7 +2,7 @@ rm -rf .cache/wal
 wal -i wallpaper/wallpaper.jpg
 rm -rf ~/.Xresources
 sudo cp ~/.cache/wal/colors.Xresources ~/.Xresources 
-picom --config ~/.config/picom/picom.conf &
-setxkbmap gb
-polybar -r bar -c ~/.config/polybar/date/config & 
-polybar -r bar -c ~/.config/polybar/launcher/config &
+picom -b
+setxkbmap gb 
+
+~/.config/polybar/launch.sh

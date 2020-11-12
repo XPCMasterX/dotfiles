@@ -1,0 +1,16 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.fontFamily": "Victor Mono",
+    "editor.fontWeight": "bold",
+"editor.fontLigatures": true,
+"[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"window.zoomLevel": 0,
+}

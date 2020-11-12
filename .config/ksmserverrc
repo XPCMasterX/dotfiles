@@ -1,0 +1,34 @@
+[$Version]
+update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=1061726368000160416348500000006280003
+clientId2=1061726368000160408087200000005980005
+clientId3=1061726368000160414722500000057760004
+clientId4=1061726368000160414722500000057760005
+clientId5=1061726368000160416348500000006280004
+count=5
+discardCommand3[$e]=rm,$HOME/.config/session/kmix_1061726368000160414722500000057760004_1604163727_726111
+program1=/usr/lib/DiscoverNotifier
+program2=/usr/lib/baloorunner
+program3=/usr/bin/kmix
+program4=/usr/bin/korgac
+program5=pulseaudio
+restartCommand1=/usr/lib/DiscoverNotifier,-session,1061726368000160416348500000006280003_1604163727_726084
+restartCommand2=/usr/lib/baloorunner,-session,1061726368000160408087200000005980005_1604163727_726253
+restartCommand3=/usr/bin/kmix,-session,1061726368000160414722500000057760004_1604163727_726111
+restartCommand4=/usr/bin/korgac,-session,1061726368000160414722500000057760005_1604163727_726408
+restartCommand5=
+restartStyleHint1=0
+restartStyleHint2=0
+restartStyleHint3=0
+restartStyleHint4=0
+restartStyleHint5=0
+userId1=varshith
+userId2=varshith
+userId3=varshith
+userId4=varshith
+userId5=varshith

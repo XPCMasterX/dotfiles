@@ -1,0 +1,15 @@
+[2020-11-10 17:04:07.989] [sharedprocess] [info] main {"machineId":"626292838591a2cd4204512a1a3984544161bd0cbea9a79198919346098034d6","windowId":2}
+[2020-11-10 17:04:08.160] [sharedprocess] [info] Deleted from disk bauke.horizon-vscode /home/varshith/.vscode/extensions/bauke.horizon-vscode-3.0.3
+[2020-11-10 17:04:23.292] [sharedprocess] [info] Installing extension: zhuangtongfa.material-theme
+[2020-11-10 17:04:23.956] [sharedprocess] [info] Downloaded extension: zhuangtongfa.material-theme undefined
+[2020-11-10 17:04:24.104] [sharedprocess] [info] Extracted extension to /home/varshith/.vscode/extensions/.zhuangtongfa.material-theme-3.9.3: zhuangtongfa.material-theme
+[2020-11-10 17:04:24.104] [sharedprocess] [info] Renamed to /home/varshith/.vscode/extensions/zhuangtongfa.material-theme-3.9.3
+[2020-11-10 17:04:24.104] [sharedprocess] [info] Installation completed. zhuangtongfa.material-theme
+[2020-11-10 17:04:24.109] [sharedprocess] [info] Extensions installed successfully: zhuangtongfa.material-theme
+[2020-11-10 17:04:47.638] [sharedprocess] [info] Installing extension: jsjlewis96.one-dark-pro-italic-vivid
+[2020-11-10 17:04:47.998] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-11-10 17:04:48.739] [sharedprocess] [info] Downloaded extension: jsjlewis96.one-dark-pro-italic-vivid undefined
+[2020-11-10 17:04:48.760] [sharedprocess] [info] Extracted extension to /home/varshith/.vscode/extensions/.jsjlewis96.one-dark-pro-italic-vivid-2.12.5: jsjlewis96.one-dark-pro-italic-vivid
+[2020-11-10 17:04:48.761] [sharedprocess] [info] Renamed to /home/varshith/.vscode/extensions/jsjlewis96.one-dark-pro-italic-vivid-2.12.5
+[2020-11-10 17:04:48.761] [sharedprocess] [info] Installation completed. jsjlewis96.one-dark-pro-italic-vivid
+[2020-11-10 17:04:48.765] [sharedprocess] [info] Extensions installed successfully: jsjlewis96.one-dark-pro-italic-vivid

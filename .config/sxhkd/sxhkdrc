@@ -15,7 +15,7 @@ shift + alt + {q,r}
 
 # Switch to Window
 mod4 + {1-9} 
-  bspc desktop -f '^{1-9}'
+  bspc desktop -f '^{1-9}' && ./home/varshith/.config/polybar/launch.sh
 
 # Move App To Specified Window
 mod4 + shift + {1-9}
@@ -27,4 +27,8 @@ mod4 + Tab
 
 # Power Menu
 mod4 + Escape
-  rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu -theme ~/.config/rofi/launchers/style_normal_grid.rasi  
+  rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu -theme ~/.config/rofi/nord.rasi 
+
+# Close Windows
+mod4 + {_,shift + }w
+    bspc node -{c,k}
