@@ -1,48 +1,83 @@
-// import anime from "animejs/lib/anime.es.js";
-
 export class App {
     constructor() {
-        this.snakeBlocks = [];
+        this.snakePath = [];
+        this.snakeBlocks = [{
+            x: 0,
+            y: 0,
+            width: 50,
+            height: 50,
+            position: 0,
+        }];
 
-        this.directions = [{
-            direction: "Up",
-            moveBy: 10,
-            vertical: true
-        },
-        {
-            direction: "Down",
-            moveBy: -10,
-            vertical: true
-        },
-        {
-            direction: "Left",
-            moveBy: -10,
-            vertical: false
-        },
-        {
-            direction: "Right",
-            moveBy: 10,
-            vertical: false
-        }]
+        this.directions = {
+            up: {
+                direction: "Up",
+                moveBy: 10,
+                vertical: true
+            },
+            down: {
+                direction: "Down",
+                moveBy: -10,
+                vertical: true
+            },
+            left: {
+                direction: "Left",
+                moveBy: 10,
+                vertical: false
+            },
+            right: {
+                direction: "Right",
+                moveBy: -10,
+                vertical: false
+            }
+        }
 
+        this.handleKeyPress = event => {
+            switch (event.key) {
+                case 'w':
+                    this.changeDirection({ "direction": "Up", "moveBy": 10, "vertical": true });
+                    break;
+                case 'a':
+                    this.changeDirection({ "direction": "Left", "moveBy": 10, "vertical": false });
+                    break;
+                case 's':
+                    this.changeDirection({ "direction": "Down", "moveBy": -10, "vertical": true });
+                    break;
+                case 'd':
+                    this.changeDirection({ "direction": "Right", "moveBy": -10, "vertical": false });
+                    break;
+                default:
+                    console.log(event.key)
+            }
+        }
     }
     attached() {
-        this.canvas = this.myCanvas.getContext("2d");
-        this.canvas.fillStyle = '#FF0000';
+        // Set canvas to cover entire screen
+        this.myCanvas.setAttribute('width', window.innerWidth);
+        this.myCanvas.setAttribute('height', window.innerHeight);
 
-        this.canvas.fillRect(0, 0, 50, 50)
+        this.canvas = this.myCanvas.getContext("2d");
 
         this.data = {
             x: 0,
-            y: 200,
+            y: 0,
             width: 50,
             height: 50,
-            vertical: true,
-            moveBy: 10
+            vertical: false,
+            moveBy: -10
         }
 
-        setInterval(() => this.moveRect(this.canvas, this.data), 1000)
+        setInterval(() => this.moveFrontRect(this.canvas, this.data), 350)
+
+        setTimeout(() => this.moveRect(this.canvas, this.snakeBlocks[0]), 350)
+
+        document.addEventListener('keypress', this.handleKeyPress);
     }
+
+    detached() {
+        document.removeEventListener('keypress', this.handleKeyPress);
+    }
+
     removeElement(ctx, rectObject) {
         let oldFillStyle = ctx.fillStyle;
 
@@ -53,12 +88,8 @@ export class App {
     }
 
 
-    moveRect(ctx, rectObject) {
-        let oldFillStyle = ctx.fillStyle;
-
+    moveFrontRect(ctx, rectObject) {
         this.removeElement(ctx, rectObject);
-
-        ctx.fillStyle = '#FF9999';
 
         if (rectObject.vertical === true) {
             ctx.fillRect(rectObject.x, eval(`rectObject.y - ${rectObject.moveBy}`), rectObject.width, rectObject.height);
@@ -68,7 +99,21 @@ export class App {
             this.data.x = rectObject.x - rectObject.moveBy;
         }
 
-        ctx.fillStyle = oldFillStyle;
+        this.snakePath.push(this.data)
+    }
+
+    moveRect(ctx, snakeBlock) {
+        this.removeElement(ctx, snakeBlock);
+
+        if (snakeBlock.vertical === true) {
+            ctx.fillRect(snakeBlock.x, this.snakePath[snakeBlock.position].y, snakeBlock.width, snakeBlock.height);
+            this.snakeBlock.y = snakeBlock.y - this.snakePath[snakeBlock.position].moveBy;
+        } else if (snakeBlock.vertical !== true) {
+            ctx.fillRect(this.snakePath[this.snakeBlocks[0].position].x, snakeBlock.y, snakeBlock.width, snakeBlock.height);
+            this.snakeBlock.x = this.snakeBlocks[0].x - this.snakePath[this.snakeBlocks[0].position].moveBy;
+        }
+
+        snakeBlock.position += 1;
     }
 
     changeDirection(data) {
