@@ -1,5 +1,7 @@
 <template>
-  <button click.trigger="move()"></button>
-  <button repeat.for="snakeBlock of snakeBlocks" css.bind="snakeBlockStyle">${snakeBlock}</button>
-  <!--<button click.trigger="move()">Move</button>-->
+    <canvas ref="myCanvas" width="500" height="500"></canvas>
+    <p ref="myP"></p>
+    <button repeat.for="direction of directions"
+        click.trigger="changeDirection(${direction.data})">${direction.direction}</button>
+    <!--Work on this.-->
 </template>
