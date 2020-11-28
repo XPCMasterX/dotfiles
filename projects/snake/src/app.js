@@ -10,15 +10,30 @@ export class App {
         this.snakePath = [];
         this.snakeBlocks = [{
             position: 0,
-            ref: "follow1"
+            refer: "follow1"
+        }, {
+            position: 0,
+            refer: "follow2"
         }]
 
         this.snakeHead = {};
         this.snakeHead.translateX = 0;
+
+        /* Styles */
+        this.snakeBlockStyle = {
+            height: "20px",
+            width: "20px",
+            "background-color": "black",
+            border: "none"
+        }
+
+        this.snakeHeadStyle = JSON.parse(JSON.stringify(this.snakeBlockStyle));
+        this.snakeHeadStyle["background-color"] = "red";
     }
 
     attached() {
         setInterval(() => this.move(this.myButton), 500)
+        setInterval(() => this.move2(0, this.snakeBlocks[0].refer), 500)
     }
 
     changeDirection() {
@@ -26,12 +41,10 @@ export class App {
         console.log(this.direction)
     }
 
-    move2(snakeBlock, index) {
-        console.log(this.snakeBlocks[index].ref)
-
+    move2(index, ref) {
         anime({
             targets: ref,
-            translateX: this.snakePath[snakeBlock.position].translateX,
+            translateX: this.snakePath[this.snakeBlocks[index].position].translateX,
             easing: "steps(1)"
         });
 

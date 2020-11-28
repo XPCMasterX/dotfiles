@@ -1,7 +1,7 @@
 <template>
     <button click.delegate="changeDirection()">mvoe</button>
-    <button click.delegate="move2(snakeBlocks[0], 0)">REALLY</button>
+    <button click.delegate="move2(0, follow1)">REALLY</button>
     <br />
-    <button ref="follow1">ON"</button>
-    <button ref="myButton">HEy</button>
+    <button repeat.for="snakeBlock of snakeBlocks" ref="snakeBlock.refer" style.bind="snakeBlockStyle"></button>
+    <button ref="myButton" style.bind="snakeHeadStyle"></button>
 </template>
